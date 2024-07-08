@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Ecommerce Store</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Inline styles for demonstration */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .cart-item img {
+            width: 80px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .cart-item-info {
+            flex: 1;
+        }
+        .cart-item-title {
+            font-weight: bold;
+        }
+        .cart-item-price {
+            color: #007bff;
+        }
+        .cart-item-remove {
+            color: #dc3545;
+            cursor: pointer;
+        }
+        .cart-summary {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .cart-summary-total {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .checkout-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .checkout-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Shopping Cart</h1>
+
+        <div class="cart-item">
+            <img src="product1.jpg" alt="Product Image">
+            <div class="cart-item-info">
+                <p class="cart-item-title">Product Name</p>
+                <p>Price: <span class="cart-item-price">$XX.XX</span></p>
+                <p>Quantity: 1</p>
+                <p class="cart-item-remove">Remove</p>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="product2.jpg" alt="Product Image">
+            <div class="cart-item-info">
+                <p class="cart-item-title">Another Product Name</p>
+                <p>Price: <span class="cart-item-price">$YY.YY</span></p>
+                <p>Quantity: 2</p>
+                <p class="cart-item-remove">Remove</p>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h2>Cart Summary</h2>
+            <p>Total Items: 2</p>
+            <p>Subtotal: $ZZ.ZZ</p>
+            <p>Shipping: Free</p>
+            <hr>
+            <p class="cart-summary-total">Total: $ZZ.ZZ</p>
+            <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+        </div>
+
+    </div>
+</body>
+</html>

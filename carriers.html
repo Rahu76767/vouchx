@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <link rel="stylesheet" href="carriers.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">VouchX</div>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="todaysdeal.html">Today's Deal</a></li>
+                <li class="nav-item"><a href="careers.html">Careers</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="company-info">
+            <h1>Join Our Team</h1>
+            <p>At VouchX, we believe in fostering a collaborative and inclusive work environment where everyone can thrive. Join us and be part of a dynamic team that's making a difference.</p>
+        </section>
+
+        <section class="job-listings">
+            <h2>Current Openings</h2>
+            <div class="job-card">
+                <h3>Software Engineer</h3>
+                <p>Location: belgaum,India</p>
+                <p>Experience: 3+ years</p>
+                <button class="apply-button" onclick="openApplicationForm()">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h3>Product Manager</h3>
+                <p>Location: Hubli,India</p>
+                <p>Experience: 5+ years</p>
+                <button class="apply-button" onclick="openApplicationForm()">Apply Now</button>
+            </div>
+            <!-- Add more job cards as needed -->
+        </section>
+
+        <section id="application-form" class="application-form hidden">
+            <h2>Application Form</h2>
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" name="resume" required>
+
+                <button type="submit" class="submit-button">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 VouchX. All rights reserved.</p>
+    </footer>
+
+    <script src="carriers.js"></script>
+</body>
+</html>

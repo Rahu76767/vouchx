@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VouchX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="top">
+    <header>
+        <nav class="bg-[#0F1111] h-16 flex justify-evenly items-center text-white text-sm">
+            <a href="#" class="border border-transparent p-1 hover:border-white">
+                <img src="./assets/Logo.jpg" alt="" class="w-24 h-10 mt-2"/>
+            </a>
+
+            <div class="border border-transparent p-1 hover:border-white">
+                <p class="text-xs pl-3">Deliver to</p>
+                <div class="flex items-center gap-1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="font-bold">India</p>
+                </div>
+            </div>
+
+            <div class="text-black flex h-12 p-1">
+                <select class="bg-[#E6E6E6] px-2 rounded-lg rounded-r-none">
+                    <option>All</option>
+                    <option>Shopping Vouchers</option>
+                    <option>Movie Vouchers</option>
+                    <option>Payment Vouchers</option>
+                    <option>Trip Vouchers</option>
+                    <option>Google play Vouchers</option>
+                    <option>Food Vouchers Vouchers</option>
+                    <option>Brands Vouchers</option>
+                    <option>Gift Cards Vouchers</option>
+                </select>
+                <input type="text" placeholder="Search VouchX" class="w-[780px] pl-2 text-base"/>
+                <div class="bg-orange-300 rounded-lg rounded-l-none p-2">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </div>
+            </div>
+            
+
+            <div class="flex border border-transparent p-1 hover:border-white">
+                <img src="./assets/inr.png" class="h-4 w-5"/>
+                <select class="bg-transparent font-bold">
+                    <option>+91</option>
+                </select>
+            </div>
+
+            <div class="border border-transparent p-1 hover:border-white">
+                <p class="text-xs pl-1">Hello, sign in</p>
+                <p><strong><a href="account.html">Account </a></strong></p>
+                
+            </div>
+            <div class="flex items-center border border-transparent p-1 hover:border-white">
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                <p class="font-bold pt-2">cart</a></p>
+            </div>
+
+        </nav>
+
+        <div class="bg-[#222F3D] h-10 flex items-center text-white text-sm pl-4">
+            <div class="flex items-center gap-1 border border-transparent p-2 hover:border-white">
+                <style>
+                    body {
+                        margin: 0;
+                        font-family: Arial, sans-serif;
+                    }
+                    .header {
+                        
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        color: white;
+                        padding-left: 10px;
+                    }
+                    .menu {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        padding: 10px;
+                        cursor: pointer;
+                    }
+                    .sidebar {
+                        height: 100%;
+                        width: 0;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        background-color: #222F3D;
+                        overflow-x: hidden;
+                        transition: 0.5s;
+                        padding-top: 60px;
+                        box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+                    }
+                    .sidebar a {
+                        padding: 10px 15px;
+                        text-decoration: none;
+                        font-size: 18px;
+                        color: white;
+                        display: block;
+                        transition: 0.3s;
+                    }
+                    .sidebar a:hover {
+                        background-color: #575757;
+                    }
+                    .sidebar .closebtn {
+                        position: absolute;
+                        top: 0;
+                        right: 25px;
+                        font-size: 36px;
+                        color: white;
+                        text-decoration: none;
+                    }
+                    .main-content {
+                        transition: margin-left .5s;
+                        padding: 16px;
+                        margin-left: 0; /* Ensure main content starts without margin */
+                    }
+                </style>
+            </head>
+            <body>
+            
+            <div class="header">
+                <div class="menu" onclick="openNav()">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                    <p class="font-bold">All</p>
+                </div>
+            </div>
+            
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="index.html">Home</a>
+                <a href="todaysdeal.html">Today's Deals</a>
+                <a href="carriers.html">Careers</a>
+                <a href="blog.html">Blog</a>
+                <a href="contactus.html">Contact</a>
+            </div>
+            
+           
+            <script>
+                function openNav() {
+                    document.getElementById("mySidebar").style.width = "250px";
+                    document.getElementById("main").style.marginLeft = "250px";
+                }
+            
+                function closeNav() {
+                    document.getElementById("mySidebar").style.width = "0";
+                    document.getElementById("main").style.marginLeft= "0";
+                }
+            </script>
+            
+            </body>
+    
+            </div>
+
+            <ul class="flex items-center">
+                <li class="border border-transparent p-2 hover:border-white"><a href="todaysdeal.html">Todays Deals</a></li>
+                <li class="border border-transparent p-2 hover:border-white">
+                    <a href="register.html">Register</a>
+                </li>
+                <li class="border border-transparent p-2 hover:border-white">
+                    <a href="login.html">Login</a>
+                </li>
+                
+                <li class="border border-transparent p-2 hover:border-white"><a href="buying.html"> Buy Gift Card</a></li>
+                <li class="border border-transparent p-2 hover:border-white"><a href="selling.html">Sell Gift Cards</a></li>
+                <li class="border border-transparent p-2 hover:border-white"><a href="categories.html">Categories</a></li>
+                <li class="border border-transparent p-2 hover:border-white"><a href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main class="bg-[#E6E6E6] pb-5">
+        <div class="bg-[url('./assets/label.png')] bg-cover h-80 flex justify-center items-end">
+            <div class="bg-white text-sm h-10 flex justify-center items-center w-[1460px] mb-6">
+                <p>You are on VouchX.in. You can also shop on VouchX in India for millions of Vouchers with fast Instant delivery. 
+                <a class="text-[#007185] hover:underline hover:text-orange-500"href="index.html">here to go to VouchX.in</a></p>
+            </div>
+
+        </div>
+
+        <div class="grid grid-cols-4 grid-rows-2 gap-4 px-4">
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Up to 60% off | Clothing On Brands Vouchers</h2>
+                <img src="./assets/35.jpg" alt="" class="my-3"/>
+                <p class="text-[#007185] text-xs">See more</p>
+            </div>
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Up to 52% off | Trip Package Vouchers</h2>
+                <img src="./assets/34.jpg" alt="" class="my-3"/>
+                <a href="#" class="text-xs text-[#007185]">Shop now</a>
+            </div>
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Up to 60% off | Shopping Vouchers</h2>
+                <img src="./assets/36.jpg" alt="" class="my-3"/>
+                <a href="#" class="text-xs text-[#007185]">Shop now</a>
+            </div>
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Up to 50% off | Movie Booking Vouchers</h2>
+                <img src="./assets/37.jpg" alt="" class="my-3"/>
+                <a href="#" class="text-xs text-[#007185]">Shop now</a>
+            </div>
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Up to 70% off | Food Vouchers</h2>
+                <img src="./assets/2.jpg" alt="" class="my-3"/>
+                <a href="#" class="text-xs text-[#007185]">See more</a>
+            </div>
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Up to 67% off | Google Playstore Vouchers</h2>
+                <img src="./assets/10.jpg" alt="" class="my-3"/>
+                <a href="#" class="text-xs text-[#007185]">Shop now</a>
+            </div>
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Up to 72% off | Solon Vouchers </h2>
+                <img src="./assets/11.jpg" alt="" class="my-3"/>
+                <a href="#" class="text-xs text-[#007185]">Shop now</a>
+            </div>
+            <div class="bg-white p-4">
+                <h2 class="text-xl font-bold">Up to 80% off | Payment Vouchers</h2>
+                <img src="./assets/9.jpg" alt="" class="my-3"/>
+                <a href="#" class="text-xs text-[#007185]">See more</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+       
+        <div class="bg-[#37475A] h-12 flex justify-center items-center text-white text-sm" onclick="scrollToTop()">
+            <p>Back to top</p>
+        </div>
+       </div>
+        
+        <script>
+            function scrollToTop() {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            }
+        </script>
+        <div class="bg-[#232F3E] h-[340px] text-[#DDDDDD] text-sm flex justify-evenly py-10">
+            <ul class="space-y-2.5">
+                <li class="font-bold text-base text-white">Get to Know Us</li>
+                <li><a href="carriers.html">carriers</a></li>
+                <li><a href="blog.html">Blog
+                    </a>
+                </li>
+                <li><a href="about.html">VouchX</a></li>
+            </ul>
+            <ul class="space-y-2.5">
+                <li class="text-base font-bold text-white">Make Money with Us</li>
+                <li><a href="buying.html"> Buy Vouchers on VouchX</a></li>
+                <li><a href="selling.html">Sell on Vouchers on VouchX</a></li>
+                <li><a href="affliate.html">Become an Affiliate</a></li>
+            </ul>
+
+            <ul class="space-y-2.5">
+                <li class="text-base font-bold text-white">Social media</li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Telegram</li>
+                <li>Twitter</li>
+            </ul>
+
+            <ul class="space-y-2.5">
+                <li class="text-base font-bold text-white">Let Us Help You</li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="orders.html"> Orders</a></li>
+                <li><a href="tax.html"> Rates & Policies</a></li>
+                <li><a href="help.html">help</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+</body>
+</html>
